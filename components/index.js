@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     fontSize: 35,
   },
   image: {
-    height: 100,
-    width: 100,
+    height: 130,
+    width: 130,
   },
 });
