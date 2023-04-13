@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, StyleSheet, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-const Welcome = () => {
+const Home = () => {
   const navigation = useNavigation();
 
   useEffect(() => {
@@ -17,30 +17,18 @@ const Welcome = () => {
     <View style={styles.container}>
       <Image
         source={require("../assets/images/AcessLogo.png")}
-        style={styles.image}
       />
-      <Text style={styles.text}>
-        Access {"\n"}pension {"\n"}
-      </Text>
     </View>
   );
 };
 
-export default Welcome;
+export default Home;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: "row",
     alignItems: "center",
-    marginLeft:60
-  },
-  text: {
-    color: "#114185",
-    fontSize: 35,
-  },
-  image: {
-    height: 130,
-    width: 130,
+    marginLeft: 20,
   },
 });
